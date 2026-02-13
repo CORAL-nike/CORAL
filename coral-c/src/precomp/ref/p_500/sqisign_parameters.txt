@@ -1,0 +1,6 @@
+lvl = p_500
+p = 0x107fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+num_orders=1
+primes_per_order=101
+good_primes = 150
+bad_primes = 200

@@ -1,0 +1,6 @@
+lvl = p_test
+p = 0x7fffffffffffffffffffffffffffffff
+num_orders=1
+primes_per_order=101
+good_primes = 2
+bad_primes = 4

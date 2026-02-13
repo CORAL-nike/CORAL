@@ -1,0 +1,27 @@
+#include <stddef.h>
+#include <stdint.h>
+#include <torsion_constants.h>
+const ibz_t TWO_TO_SECURITY_BITS = 
+#if 0
+#elif GMP_LIMB_BITS == 64
+{{._mp_alloc = 0, ._mp_size = 3, ._mp_d = (mp_limb_t[]) {0x0,0x0,0x1}}}
+#endif
+;
+const ibz_t TORSION_PLUS_2POWER = 
+#if 0
+#elif GMP_LIMB_BITS == 64
+{{._mp_alloc = 0, ._mp_size = 4, ._mp_d = (mp_limb_t[]) {0x0,0x0,0x0,0x100000000000000}}}
+#endif
+;
+const ibz_t SEC_DEGREE = 
+#if 0
+#elif GMP_LIMB_BITS == 64
+{{._mp_alloc = 0, ._mp_size = 9, ._mp_d = (mp_limb_t[]) {0x4b,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1}}}
+#endif
+;
+const ibz_t COM_DEGREE = 
+#if 0
+#elif GMP_LIMB_BITS == 64
+{{._mp_alloc = 0, ._mp_size = 9, ._mp_d = (mp_limb_t[]) {0x4b,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x1}}}
+#endif
+;

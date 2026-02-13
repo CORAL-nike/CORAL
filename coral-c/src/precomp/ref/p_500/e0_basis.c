@@ -1,0 +1,23 @@
+#include <e0_basis.h>
+const fp2_t BASIS_E0_PX = {
+#if 0
+#elif RADIX == 64
+{0xd3739139b29278, 0x6d5e27905b9115, 0x1681586f451c684, 0x6c3357586f3634, 0x2db8e6f13bcdff, 0x154ea393f459c82, 0xedcaa9e3b20a5e, 0x1b26926d6240101, 0x7e4505a8b8c8b}
+#endif
+, 
+#if 0
+#elif RADIX == 64
+{0x1e52ecb55395ca5, 0x10ca332dc05d455, 0x195ca246448d359, 0x1a707ccf37f2123, 0x17a004113f53d60, 0x1e36a01bb9fd18c, 0x1ffc49d57f2be71, 0x1cdfc6d79967701, 0xff7553a13b1eb}
+#endif
+};
+const fp2_t BASIS_E0_QX = {
+#if 0
+#elif RADIX == 64
+{0x1ed9fb94a1c4475, 0xd3b755423a180b, 0x1d502b5e7da884, 0x16ae7802804c619, 0x12ba6e42c1b3be6, 0x1f43070abeced94, 0x132467ac4ebcb36, 0x50d87110944101, 0x96c7582c7436e}
+#endif
+, 
+#if 0
+#elif RADIX == 64
+{0x2f49af934403cb, 0x1524dd29c76da6f, 0x1a19e8ea81281a6, 0x103bce98c017911, 0x7495263a1833d0, 0x1f1c49034e74db8, 0x1eb6df656fb3da1, 0x7711748618ff53, 0x4c3ba8281ee10}
+#endif
+};

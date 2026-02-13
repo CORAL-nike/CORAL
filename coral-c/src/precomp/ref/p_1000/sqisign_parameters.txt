@@ -1,0 +1,6 @@
+lvl = p_1000
+p = 0xefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+num_orders=1
+primes_per_order=101
+good_primes = 300
+bad_primes = 400

@@ -1,0 +1,927 @@
+{
+  "prime": 21474836479,
+  "exponent": 28,
+  "fails": 9585,
+  "successes": 1679,
+  "collisions": 0,
+  "primality_condition": false,
+  "classes": {
+    "(43765, -42822, 501160)": {
+      "341": 19
+    },
+    "(111403, -59710, 200768)": {
+      "89": 26
+    },
+    "(14615, 11662, 1471696)": {
+      "495": 26
+    },
+    "(51317, 25164, 421559)": {
+      "297": 30
+    },
+    "(107171, -41128, 204325)": {
+      "651": 26
+    },
+    "(130033, 36160, 167663)": {
+      "829": 26
+    },
+    "(25795, 10242, 833536)": {
+      "705": 23
+    },
+    "(75605, -22748, 285751)": {
+      "609": 32
+    },
+    "(31843, 30400, 681653)": {
+      "429": 25
+    },
+    "(118693, 100402, 202160)": {
+      "613": 22
+    },
+    "(155561, -108604, 157003)": {
+      "909": 23
+    },
+    "(73240, 19718, 294539)": {
+      "273": 21
+    },
+    "(9845, -3772, 2181655)": {
+      "163": 15
+    },
+    "(143653, -140162, 183680)": {
+      "345": 31
+    },
+    "(57248, -24734, 377791)": {
+      "789": 23
+    },
+    "(85333, 8340, 251863)": {
+      "729": 27
+    },
+    "(116984, 109206, 209057)": {
+      "737": 31
+    },
+    "(153328, 140274, 172141)": {
+      "19": 32
+    },
+    "(30248, -12762, 711305)": {
+      "315": 29
+    },
+    "(57080, -36118, 381937)": {
+      "621": 23
+    },
+    "(67589, -40494, 323792)": {
+      "91": 30
+    },
+    "(76112, -6222, 282275)": {
+      "21": 31
+    },
+    "(97541, -77748, 235655)": {
+      "591": 27
+    },
+    "(61784, -7302, 347795)": {
+      "647": 22
+    },
+    "(90461, -31520, 240139)": {
+      "793": 32
+    },
+    "(68680, 44522, 319895)": {
+      "687": 24
+    },
+    "(54169, -6150, 396616)": {
+      "449": 28
+    },
+    "(107975, 88528, 217033)": {
+      "35": 22
+    },
+    "(73613, -28682, 294520)": {
+      "521": 25
+    },
+    "(137093, 113420, 180103)": {
+      "699": 27
+    },
+    "(129185, -15058, 166672)": {
+      "249": 28
+    },
+    "(57160, 5062, 375809)": {
+      "129": 20
+    },
+    "(99088, -12046, 217091)": {
+      "17": 18
+    },
+    "(50729, -48406, 434872)": {
+      "361": 36
+    },
+    "(119729, 95466, 198392)": {
+      "487": 25
+    },
+    "(73349, -11046, 293192)": {
+      "813": 26
+    },
+    "(63055, 26288, 343313)": {
+      "71": 33
+    },
+    "(31549, 11878, 681800)": {
+      "827": 25
+    },
+    "(99205, -19372, 217415)": {
+      "213": 26
+    },
+    "(152095, -95412, 156157)": {
+      "801": 27
+    },
+    "(37499, -29030, 578296)": {
+      "849": 17
+    },
+    "(135715, -132682, 190664)": {
+      "765": 25
+    },
+    "(61159, 14384, 351977)": {
+      "15": 17
+    },
+    "(83552, 39010, 261577)": {
+      "891": 21
+    },
+    "(107195, 70412, 211897)": {
+      "719": 28
+    },
+    "(92251, -1484, 232793)": {
+      "159": 30
+    },
+    "(6707, -2134, 3202024)": {
+      "531": 21
+    },
+    "(127769, -108750, 191216)": {
+      "123": 30
+    },
+    "(128275, -97672, 186005)": {
+      "165": 17
+    },
+    "(62605, 13408, 343739)": {
+      "639": 25
+    },
+    "(122143, 113826, 202336)": {
+      "37": 27
+    },
+    "(86653, 27250, 249968)": {
+      "881": 24
+    },
+    "(134929, -21030, 159976)": {
+      "649": 19
+    },
+    "(14392, 5718, 1492705)": {
+      "579": 22
+    },
+    "(81043, -80060, 284753)": {
+      "783": 20
+    },
+    "(86495, -42508, 253501)": {
+      "777": 24
+    },
+    "(101063, -76610, 227008)": {
+      "807": 20
+    },
+    "(129125, 73578, 176792)": {
+      "465": 13
+    },
+    "(37744, -15758, 570605)": {
+      "507": 26
+    },
+    "(16600, -8678, 1294799)": {
+      "253": 26
+    },
+    "(47509, -28062, 456160)": {
+      "305": 25
+    },
+    "(44017, -39246, 496624)": {
+      "45": 23
+    },
+    "(74977, 20196, 287779)": {
+      "207": 13
+    },
+    "(18079, 5536, 1188257)": {
+      "411": 17
+    },
+    "(91877, 44052, 239015)": {
+      "771": 25
+    },
+    "(135233, 120296, 185551)": {
+      "597": 22
+    },
+    "(130840, 76938, 175441)": {
+      "811": 19
+    },
+    "(32725, -28678, 662504)": {
+      "477": 25
+    },
+    "(84251, -784, 254893)": {
+      "573": 16
+    }
+  },
+  "sample": "randomized over y",
+  "incremental_data": {
+    "0": {
+      "fails": 0,
+      "successes": 0,
+      "collisions": 0,
+      "classes": 0,
+      "first_collision": false
+    },
+    "112": {
+      "fails": 95,
+      "successes": 17,
+      "collisions": 0,
+      "classes": 15,
+      "first_collision": false
+    },
+    "224": {
+      "fails": 191,
+      "successes": 33,
+      "collisions": 0,
+      "classes": 28,
+      "first_collision": false
+    },
+    "336": {
+      "fails": 287,
+      "successes": 49,
+      "collisions": 0,
+      "classes": 37,
+      "first_collision": false
+    },
+    "448": {
+      "fails": 385,
+      "successes": 63,
+      "collisions": 0,
+      "classes": 40,
+      "first_collision": false
+    },
+    "560": {
+      "fails": 483,
+      "successes": 77,
+      "collisions": 0,
+      "classes": 48,
+      "first_collision": false
+    },
+    "672": {
+      "fails": 581,
+      "successes": 91,
+      "collisions": 0,
+      "classes": 50,
+      "first_collision": false
+    },
+    "784": {
+      "fails": 672,
+      "successes": 112,
+      "collisions": 0,
+      "classes": 55,
+      "first_collision": false
+    },
+    "896": {
+      "fails": 763,
+      "successes": 133,
+      "collisions": 0,
+      "classes": 59,
+      "first_collision": false
+    },
+    "1008": {
+      "fails": 863,
+      "successes": 145,
+      "collisions": 0,
+      "classes": 61,
+      "first_collision": false
+    },
+    "1120": {
+      "fails": 958,
+      "successes": 162,
+      "collisions": 0,
+      "classes": 62,
+      "first_collision": false
+    },
+    "1232": {
+      "fails": 1054,
+      "successes": 178,
+      "collisions": 0,
+      "classes": 63,
+      "first_collision": false
+    },
+    "1344": {
+      "fails": 1151,
+      "successes": 193,
+      "collisions": 0,
+      "classes": 63,
+      "first_collision": false
+    },
+    "1456": {
+      "fails": 1243,
+      "successes": 213,
+      "collisions": 0,
+      "classes": 66,
+      "first_collision": false
+    },
+    "1568": {
+      "fails": 1339,
+      "successes": 229,
+      "collisions": 0,
+      "classes": 66,
+      "first_collision": false
+    },
+    "1680": {
+      "fails": 1435,
+      "successes": 245,
+      "collisions": 0,
+      "classes": 66,
+      "first_collision": false
+    },
+    "1792": {
+      "fails": 1527,
+      "successes": 265,
+      "collisions": 0,
+      "classes": 66,
+      "first_collision": false
+    },
+    "1904": {
+      "fails": 1625,
+      "successes": 279,
+      "collisions": 0,
+      "classes": 66,
+      "first_collision": false
+    },
+    "2016": {
+      "fails": 1724,
+      "successes": 292,
+      "collisions": 0,
+      "classes": 67,
+      "first_collision": false
+    },
+    "2128": {
+      "fails": 1820,
+      "successes": 308,
+      "collisions": 0,
+      "classes": 68,
+      "first_collision": false
+    },
+    "2240": {
+      "fails": 1914,
+      "successes": 326,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "2352": {
+      "fails": 2009,
+      "successes": 343,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "2464": {
+      "fails": 2102,
+      "successes": 362,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "2576": {
+      "fails": 2202,
+      "successes": 374,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "2688": {
+      "fails": 2292,
+      "successes": 396,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "2800": {
+      "fails": 2392,
+      "successes": 408,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "2912": {
+      "fails": 2490,
+      "successes": 422,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3024": {
+      "fails": 2589,
+      "successes": 435,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3136": {
+      "fails": 2680,
+      "successes": 456,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3248": {
+      "fails": 2782,
+      "successes": 466,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3360": {
+      "fails": 2881,
+      "successes": 479,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3472": {
+      "fails": 2974,
+      "successes": 498,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3584": {
+      "fails": 3068,
+      "successes": 516,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3696": {
+      "fails": 3158,
+      "successes": 538,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3808": {
+      "fails": 3250,
+      "successes": 558,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "3920": {
+      "fails": 3352,
+      "successes": 568,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4032": {
+      "fails": 3450,
+      "successes": 582,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4144": {
+      "fails": 3544,
+      "successes": 600,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4256": {
+      "fails": 3642,
+      "successes": 614,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4368": {
+      "fails": 3738,
+      "successes": 630,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4480": {
+      "fails": 3837,
+      "successes": 643,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4592": {
+      "fails": 3933,
+      "successes": 659,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4704": {
+      "fails": 4032,
+      "successes": 672,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4816": {
+      "fails": 4129,
+      "successes": 687,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "4928": {
+      "fails": 4223,
+      "successes": 705,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5040": {
+      "fails": 4316,
+      "successes": 724,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5152": {
+      "fails": 4405,
+      "successes": 747,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5264": {
+      "fails": 4497,
+      "successes": 767,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5376": {
+      "fails": 4594,
+      "successes": 782,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5488": {
+      "fails": 4691,
+      "successes": 797,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5600": {
+      "fails": 4782,
+      "successes": 818,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5712": {
+      "fails": 4881,
+      "successes": 831,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5824": {
+      "fails": 4971,
+      "successes": 853,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "5936": {
+      "fails": 5067,
+      "successes": 869,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6048": {
+      "fails": 5161,
+      "successes": 887,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6160": {
+      "fails": 5246,
+      "successes": 914,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6272": {
+      "fails": 5340,
+      "successes": 932,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6384": {
+      "fails": 5438,
+      "successes": 946,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6496": {
+      "fails": 5531,
+      "successes": 965,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6608": {
+      "fails": 5626,
+      "successes": 982,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6720": {
+      "fails": 5727,
+      "successes": 993,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6832": {
+      "fails": 5823,
+      "successes": 1009,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "6944": {
+      "fails": 5926,
+      "successes": 1018,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7056": {
+      "fails": 6011,
+      "successes": 1045,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7168": {
+      "fails": 6108,
+      "successes": 1060,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7280": {
+      "fails": 6197,
+      "successes": 1083,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7392": {
+      "fails": 6297,
+      "successes": 1095,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7504": {
+      "fails": 6390,
+      "successes": 1114,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7616": {
+      "fails": 6485,
+      "successes": 1130,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7728": {
+      "fails": 6584,
+      "successes": 1143,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7840": {
+      "fails": 6681,
+      "successes": 1158,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "7952": {
+      "fails": 6773,
+      "successes": 1178,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8064": {
+      "fails": 6866,
+      "successes": 1197,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8176": {
+      "fails": 6964,
+      "successes": 1211,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8288": {
+      "fails": 7060,
+      "successes": 1227,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8400": {
+      "fails": 7155,
+      "successes": 1244,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8512": {
+      "fails": 7249,
+      "successes": 1262,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8624": {
+      "fails": 7345,
+      "successes": 1278,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8736": {
+      "fails": 7443,
+      "successes": 1292,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8848": {
+      "fails": 7532,
+      "successes": 1315,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "8960": {
+      "fails": 7622,
+      "successes": 1337,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9072": {
+      "fails": 7719,
+      "successes": 1352,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9184": {
+      "fails": 7814,
+      "successes": 1369,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9296": {
+      "fails": 7908,
+      "successes": 1387,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9408": {
+      "fails": 8005,
+      "successes": 1402,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9520": {
+      "fails": 8102,
+      "successes": 1417,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9632": {
+      "fails": 8198,
+      "successes": 1433,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9744": {
+      "fails": 8297,
+      "successes": 1446,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9856": {
+      "fails": 8392,
+      "successes": 1463,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "9968": {
+      "fails": 8489,
+      "successes": 1478,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10080": {
+      "fails": 8580,
+      "successes": 1499,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10192": {
+      "fails": 8678,
+      "successes": 1513,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10304": {
+      "fails": 8768,
+      "successes": 1535,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10416": {
+      "fails": 8868,
+      "successes": 1547,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10528": {
+      "fails": 8963,
+      "successes": 1564,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10640": {
+      "fails": 9057,
+      "successes": 1582,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10752": {
+      "fails": 9153,
+      "successes": 1598,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10864": {
+      "fails": 9243,
+      "successes": 1620,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "10976": {
+      "fails": 9337,
+      "successes": 1638,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "11088": {
+      "fails": 9439,
+      "successes": 1648,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    },
+    "11200": {
+      "fails": 9532,
+      "successes": 1667,
+      "collisions": 0,
+      "classes": 69,
+      "first_collision": false
+    }
+  }
+}
