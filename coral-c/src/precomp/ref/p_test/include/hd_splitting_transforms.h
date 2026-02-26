@@ -4,7 +4,7 @@
 #include <hd.h>
 #include <stdint.h>
 
-typedef struct precomp_basis_change_matrix_t {
+typedef struct precomp_basis_change_matrix {
     uint8_t m[4][4];
 } precomp_basis_change_matrix_t;
 
@@ -15,3 +15,4 @@ extern const precomp_basis_change_matrix_t SPLITTING_TRANSFORMS[10];
 extern const precomp_basis_change_matrix_t NORMALIZATION_TRANSFORMS[6];
 
 #endif
+

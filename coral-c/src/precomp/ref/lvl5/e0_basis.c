@@ -41,3 +41,44 @@ const fp2_t BASIS_E0_QX = {
 
 #endif
 };
+const curve_mg_fp_t CURVE_E0 = {
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0xfffffffffffffc71, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0x14fffffffffffff}
+#else
+{0x1fffffffffff8e3, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0xefffffffffff}
+#endif
+
+#endif
+, 
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0x97, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x130000000000000}
+#else
+{0x12f, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xb00000000000}
+#endif
+
+#endif
+, {
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0xffffffffffffff68, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0xffffffffffffffff, 0x7fffffffffffff}
+#else
+{0x1fffffffffffed0, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0x1ffffffffffffff, 0xffffffffffff}
+#endif
+
+#endif
+, 
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0x97, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x130000000000000}
+#else
+{0x12f, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xb00000000000}
+#endif
+
+#endif
+}, true};

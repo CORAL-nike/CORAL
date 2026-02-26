@@ -130,6 +130,15 @@ typedef struct theta_couple_curve_fp2_t { curve_mg_fp2_t E1; curve_mg_fp2_t E2; 
 
 // Bi 2^*-torsion basis on Ei
 typedef struct theta_point_fp2_t { fp2_t x; fp2_t y; fp2_t z; fp2_t t; } theta_point_fp2_t;
+
+static inline void
+theta_point_fp2_init(theta_point_fp2_t *theta_point) {
+    fp2_set_zero(&theta_point->x);
+    fp2_set_zero(&theta_point->y);
+    fp2_set_zero(&theta_point->z);
+    fp2_set_zero(&theta_point->t);
+}
+
 // Theta point with repeated components
 typedef struct theta_point_compact_fp2_t { fp2_t x; fp2_t y; } theta_point_compact_fp2_t;
 

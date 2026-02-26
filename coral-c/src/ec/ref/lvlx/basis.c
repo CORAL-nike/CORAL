@@ -255,8 +255,8 @@ curve_mg_fp_2e_basis(
         point_eqw_fp_t _Q;
         point_eqw_fp_copy(&_Q, Q);
         point_eqw_fp_normalise(&_Q);
-        assert(x_on_curve_fp(&_, &_Q.x, E));
-        assert(point_eqw_fp_on_curve(&_Q, E));
+        assert(x_on_curve_fp(&_, &_Q.x, Et));
+        assert(point_eqw_fp_on_curve(&_Q, Et));
     #endif
         // printf(":: [Basis sampling] Scaling Q %.3Lf ms\n", (long double)(clock() - start) * 1000 / CLOCKS_PER_SEC);
 

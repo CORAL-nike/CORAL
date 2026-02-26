@@ -19,18 +19,18 @@ if (NOT DEFINED SQISIGN_BUILD_TYPE)
   SET(SQISIGN_BUILD_TYPE "ref")
 endif()
 
+SET(SVARIANT_S "p_500;p_1000;p_2000;p_4000;lvl5")
+
 if (${SQISIGN_BUILD_TYPE} MATCHES "ref")
   add_compile_definitions(SQISIGN_BUILD_TYPE_REF SQISIGN_GF_IMPL_REF)
 #elseif (${SQISIGN_BUILD_TYPE} MATCHES "opt")
 #  add_compile_definitions(SQISIGN_BUILD_TYPE_OPT SQISIGN_GF_IMPL_REF)
 elseif (${SQISIGN_BUILD_TYPE} MATCHES "broadwell")
  add_compile_definitions(SQISIGN_BUILD_TYPE_BROADWELL SQISIGN_GF_IMPL_BROADWELL)
+ SET(SVARIANT_S "lvl5")
 #elseif (${SQISIGN_BUILD_TYPE} MATCHES "arm64crypto")
 #  add_compile_definitions(SQISIGN_BUILD_TYPE_ARM64CRYPTO SQISIGN_GF_IMPL_REF)
 endif()
-
-SET(SVARIANT_S "p_test;p_500;p_1000;p_2000;p_4000;lvl1;lvl3;lvl5")
-# SET(SVARIANT_S "lvl5")
 
 include(.cmake/flags.cmake)
 include(.cmake/sanitizers.cmake)

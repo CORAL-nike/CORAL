@@ -34,15 +34,47 @@ nike_normeq(ibz_t *x, ibz_t *y, ibz_t *a, const ibz_t *p, const ibz_t *two_e)
         ibz_sub(&diff, two_e, &diff);
         res = ibz_cornacchia_extended_trials(a, x, &factorization, &diff, &consts);
     }
+    if (ibz_is_even(a))
+        ibz_swap(a, x);
     ibz_finalize(&diff);
     ibz_finalize(&bound);
     return (res);
 }
 
-
-void
+int
 coral_secret_key_postinit(coral_secret_key_t *sk)
 {
+    {
+        // Verify that secret key values are well-formed, i.e. verify that
+        //   2**(2 * (e - 1)) - y**2 * p == x**2 + (2**(e - 1) - q)**2
+        ibz_t lhs, rhs, tmp;
+        ibz_init(&lhs);
+        ibz_init(&rhs);
+        ibz_init(&tmp);
+
+        ibz_pow(&lhs, &ibz_const_two, 2 * (sk->e - 1));
+        ibz_mul(&tmp, &sk->y, &sk->y);
+        ibz_mul(&tmp, &tmp, &QUATALG_PINFTY.p);
+        ibz_sub(&lhs, &lhs, &tmp);
+
+        ibz_mul(&rhs, &sk->x, &sk->x);
+        ibz_pow(&tmp, &ibz_const_two, sk->e - 1);
+        ibz_sub(&tmp, &tmp, &sk->q);
+        ibz_mul(&tmp, &tmp, &tmp);
+        ibz_add(&rhs, &rhs, &tmp);
+
+        int equal = (ibz_cmp(&lhs, &rhs) == 0);
+
+        ibz_finalize(&lhs);
+        ibz_finalize(&rhs);
+        ibz_finalize(&tmp);
+
+        if (!equal) {
+            printf("[ERROR] coral_secret_key_postinit: values (q, x, y) not well formed\n");
+            return 0;
+        }
+    }
+
     memset(sk->P1_mult, 0, NWORDS_FIELD * sizeof(*sk->P1_mult));
     memset(sk->P2_mult, 0, NWORDS_FIELD * sizeof(*sk->P1_mult));
     memset(sk->Q1_mult, 0, NWORDS_FIELD * sizeof(*sk->P1_mult));
@@ -59,7 +91,7 @@ coral_secret_key_postinit(coral_secret_key_t *sk)
     ibz_mul(&tmp1, &tmp1, &tmp1);
     // tmp2 = p * y**2
     ibz_mul(&tmp2, &sk->y, &sk->y);
-    ibz_mul(&tmp2, &tmp2, &sk->p);
+    ibz_mul(&tmp2, &tmp2, &QUATALG_PINFTY.p);
     // tmp1 = (q + x)**2 + p * y**2
     ibz_add(&tmp1, &tmp1, &tmp2);
     // v = valuation(tmp1, 2)
@@ -181,11 +213,9 @@ coral_secret_key_postinit(coral_secret_key_t *sk)
 
     // Suppress `-Werror=unused-but-set-variable` in release builds
     (void) r;
+
+    return 1;
 }
-
-
-
-
 
 // Inplace x-twist
 void
@@ -224,9 +254,6 @@ coral_prepare_hd_kernel(
         curve_mg_fp_t *Et
 ) {
     // clock_t start;
-
-    assert(fp_is_one(&P->z));
-    assert(fp_is_one(&Q->z));
 
     point_eqw_fp_t P1, P2, Q1, Q2;
 

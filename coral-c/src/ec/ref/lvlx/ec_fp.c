@@ -302,6 +302,9 @@ curve_mg_fp_normalise_and_A24(curve_mg_fp_t *E)
 
         E->is_A24_computed_and_normalized = true;
     }
+
+    assert(fp_is_one(&E->C));
+    assert(fp_is_one(&E->A24.z));
 }
 
 int
@@ -982,6 +985,7 @@ sw_to_mg_fp(
     fp_copy(&beta_sqrt, &beta);
     fp_sqrt(&beta_sqrt);
 
+    curve_mg_fp_init(E_m);
     // fp_mul_small(&E_m->A, &alpha, 3);
         fp_add(&E_m->C, &alpha, &alpha);
         fp_add(&E_m->A, &E_m->C, &alpha);

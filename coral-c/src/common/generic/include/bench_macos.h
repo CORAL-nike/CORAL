@@ -89,7 +89,7 @@ static void
 macos_configure_rdtsc()
 {
     if (kpc_force_all_ctrs_set(1)) {
-        printf("kpc_force_all_ctrs_set failed\n");
+        printf(" Unable to count cycles (MacOS requires sudo)\n");
         return;
     }
 
@@ -136,8 +136,7 @@ static uint64_t
 macos_rdtsc(void)
 {
     if (kpc_get_thread_counters(0, COUNTERS_COUNT, g_counters)) {
-        printf("kpc_get_thread_counters failed\n");
-        return 1;
+        return 0;
     }
     return g_counters[2];
 }

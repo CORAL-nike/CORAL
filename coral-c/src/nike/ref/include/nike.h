@@ -48,8 +48,18 @@ typedef struct coral_secret_key
  */
 typedef struct coral_public_key_t
 {
-    curve_mg_fp2_t curve;
+    curve_mg_fp_t curve;
 } coral_public_key_t;
+
+/** @brief Shared secret type
+ *
+ * @typedef coral_public_key_t
+ * @struct coral_public_key
+ */
+typedef struct coral_shared_secret
+{
+    curve_mg_fp_t curve;
+} coral_shared_secret_t;
 
 /** @}
  */
@@ -59,9 +69,9 @@ typedef struct coral_public_key_t
  */
 
 void coral_secret_key_init(coral_secret_key_t *sk);
-void coral_secret_key_postinit(coral_secret_key_t *sk);
+int coral_secret_key_postinit(coral_secret_key_t *sk);
 void coral_secret_key_finalize(coral_secret_key_t *sk);
-void coral_secret_key_postinit(coral_secret_key_t *sk);
+void coral_public_key_init(coral_public_key_t *sk);
 
 void
 coral_prepare_hd_kernel(
@@ -126,7 +136,7 @@ int coral_keygen(coral_secret_key_t *sk, coral_public_key_t *pk);
  * @param sk Input: a secret key
  * @returns 1 on success, 0 otherwise
  */
-int coral_derive_secret(coral_public_key_t *shared, coral_public_key_t *pk, coral_secret_key_t *sk);
+int coral_derive_secret(coral_shared_secret_t *shared, const coral_public_key_t *pk, const coral_secret_key_t *sk);
 
 /** @}
  */

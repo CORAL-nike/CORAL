@@ -41,3 +41,44 @@ const fp2_t BASIS_E0_QX = {
 
 #endif
 };
+const curve_mg_fp_t CURVE_E0 = {
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0xfffffffffffffecc, 0xffffffffffffffff, 0xffffffffffffffff, 0x3ffffffffffffff}
+#else
+{0x7ffffffffff66, 0x7ffffffffffff, 0x7ffffffffffff, 0x7ffffffffffff, 0x1fffffffffff}
+#endif
+
+#endif
+, 
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0x33, 0x0, 0x0, 0x100000000000000}
+#else
+{0x19, 0x0, 0x0, 0x0, 0x300000000000}
+#endif
+
+#endif
+, {
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0xffffffffffffffcc, 0xffffffffffffffff, 0xffffffffffffffff, 0x3ffffffffffffff}
+#else
+{0x7ffffffffffe6, 0x7ffffffffffff, 0x7ffffffffffff, 0x7ffffffffffff, 0x1fffffffffff}
+#endif
+
+#endif
+, 
+#if 0
+#elif RADIX == 64
+#if defined(SQISIGN_GF_IMPL_BROADWELL)
+{0x33, 0x0, 0x0, 0x100000000000000}
+#else
+{0x19, 0x0, 0x0, 0x0, 0x300000000000}
+#endif
+
+#endif
+}, true};

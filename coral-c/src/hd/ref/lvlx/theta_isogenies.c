@@ -889,6 +889,10 @@ _theta_chain_compute_impl_fp2(
         // clock_t gluing_start = clock();
     // kernel points for the remaining isogeny steps
     theta_point_fp2_t thetaQ1[MAX_STRATEGY_LENGTH], thetaQ2[MAX_STRATEGY_LENGTH];
+    for (uint32_t i = 0; i < MAX_STRATEGY_LENGTH; i++) {
+        theta_point_fp2_init(thetaQ1 + i);
+        theta_point_fp2_init(thetaQ2 + i);
+    }
 
     int current = strategy_length - 1;
     // the gluing step

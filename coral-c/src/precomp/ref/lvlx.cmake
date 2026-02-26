@@ -24,7 +24,6 @@ add_custom_target(precomp_${SVARIANT_LOWER}
     COMMAND "${SAGEMATH}" "${PROJECT_SOURCE_DIR}/scripts/precomp/precompute_quaternion_constants.sage"
     COMMAND "${SAGEMATH}" "${PROJECT_SOURCE_DIR}/scripts/precomp/precompute_sizes.sage"
     COMMAND "${SAGEMATH}" "${PROJECT_SOURCE_DIR}/scripts/precomp/precompute_quaternion_data.sage"
-    COMMAND "${SAGEMATH}" "${PROJECT_SOURCE_DIR}/scripts/precomp/precompute_endomorphism_action.sage"
     COMMAND "${SAGEMATH}" "${PROJECT_SOURCE_DIR}/scripts/precomp/ec_params.sage"
     COMMAND "${SAGEMATH}" "${PROJECT_SOURCE_DIR}/scripts/precomp/precompute_hd_splitting.sage"
     COMMAND "${SAGEMATH}" "${PROJECT_SOURCE_DIR}/scripts/precomp/precompute_fp_constants.sage"
